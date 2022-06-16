@@ -4,7 +4,7 @@
     --light-grey:#8f8f90;
     --white:#ffffff;
     --beige:#dedede;
-    --cat: url(/images/cat.svg);
+    --cat: url('images/cat.svg');
 }
 
 body {
@@ -123,13 +123,14 @@ p {
     transition: transform 250ms;
 }
 
+.image1 {
+    height:300px;
+}
 
 .box:hover {
     box-shadow: 0 0 1.3rem rgb(153, 234, 4);
     transition: all ease 250ms;
     transform: translateY(-10px);
-
-
 }
 
 .box_heading {
@@ -144,4 +145,11 @@ p {
     word-wrap: break-word;
 }
 
+.list_style {
+    list-style: url('../images/dot.svg');
+}
 
+li {
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+}

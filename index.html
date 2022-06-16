@@ -8,7 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>CV</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
     <header class="header">
@@ -25,34 +26,43 @@
                 <div class="nav">
                     <a class="nav_link" href="skills.html">skills</a>
                     <a class="nav_link" href="about_me.html">about me</a>
-                    <a class="nav_link" href="contact.html">contact</a>
+                    <a class="nav_link" href="mailto:alyona.shpr@yandex.ru">contact</a>
                 </div>
             </div>
         </div>
     </header>
-<div class="main_page">
-    <div class="container">
-        <div class="main_inner">
-            <div class="main_content">
-                <h2 class="inner_subtitle">Hello I'm</h2>
-                <h1 class="inner_title">Alyona Khilal-Shpiro</h1>
-                <div class="main_info">Certified English tutor</div>
+    <div class="main_page">
+        <div class="container">
+            <div class="main_inner">
+                <div class="main_content">
+                    <h2 class="inner_subtitle">Hello I'm</h2>
+                    <h1 class="inner_title">Alyona Khilal-Shpiro</h1>
+                    <div class="main_info">Certified English tutor</div>
 
-                <div class="social">
-                    <a class="soc_link" href="https://vk.com/ahilashpr">
-                        <img src="images/vk.svg" alt="">
-                    </a>
+                    <div class="social">
+                        <a class="soc_link" href="https://vk.com/ahilashpr">
+                            <img src="images/vk.svg" alt="">
+                        </a>
 
-                    <a class="soc_link" href="#">
-                        <img src="images/gith.svg" alt="">
-                    </a>
+                        <a class="soc_link" href="https://github.com/alyonashpr/cv">
+                            <img src="images/gith.svg" alt="">
+                        </a>
+                    </div>
+
+                    <button class="btn" type="button>" data-modal="#modal_resume">SEE MY RESUME</button>
                 </div>
-
-                <button class="btn" type="button>">Get in touch with me</button>
+                    <img class="main_pic" src="images/main_pic.png" alt="">
             </div>
-                <img class="main_pic" src="images/main_pic.png" alt="">
         </div>
     </div>
-</div>
+
+    <div class="modal" id="modal_resume">
+        <div class="modal_dialog">
+            <img class="modal_photo" src="images/cv.png" alt="">
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+
 </body>
 </html>
